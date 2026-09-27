@@ -1,0 +1,118 @@
+    .grid-layout-body {
+  margin: 0;
+}
+
+.grid-page-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 1.5rem;
+  background-color: #f1f5f9;
+}
+
+.area-header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.area-sidebar {
+  grid-area: sidebar;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.area-sidebar ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.area-sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.area-sidebar a {
+  color: #2563eb;
+  text-decoration: none;
+  
+}
+
+.area-main {
+  grid-area: main;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-right: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.content-box {
+  background: #f8fafc;
+  padding: 1.25rem;
+  border-left: 4px solid #38bdf8;
+  margin-top: 1.5rem;
+}
+
+.area-footer {
+  grid-area: footer;
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+  display: block;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}

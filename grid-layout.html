@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2: Grid Areas Layout</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body class="grid-layout-body">
+
+  <div class="grid-page-container">
+    <header class="area-header">
+      <div class="logo">R.M. Web Page</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+          <li><a href="grid-layout.html" class="active">Grid Layout</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="area-sidebar">
+      <h3>Navigation & Filters</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#stats">Performance</a></li>
+        <li><a href="#settings">Configuration</a></li>
+      </ul>
+    </aside>
+
+    <main class="area-main">
+      <h2>Task 2: Layout with Grid Areas</h2>
+      <p>This layout uses CSS Grid Areas to establish structured placement for Header, Sidebar, Main Content, and Footer.</p>
+      <div class="content-box">
+        <h4>Key Grid Properties Used:</h4>
+        <code>grid-template-areas: "header header" "sidebar main" "footer footer";</code>
+      </div>
+    </main>
+
+    <footer class="area-footer">
+      <p>&copy; 2026 Grid Areas Layout Demo</p>
+    </footer>
+  </div>
+
+</body>
+</html>

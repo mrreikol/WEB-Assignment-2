@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4: Portfolio Showcase</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">R.M. Web Page</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Portfolio</a></li>
+        <li><a href="flexbox.html">Flexbox</a></li>
+        <li><a href="grid-layout.html">Grid Layout</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio-grid container">
+    <section class="projects-area">
+      <h2>Featured Engineering Projects</h2>
+      
+      <div class="projects-list">
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Enterprise Order Orchestration</h3>
+            <p>Microservice routing engine built with clean design patterns and decoupled architectural layers.</p>
+          </div>
+          <button class="btn">View Source</button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Divide & Conquer Benchmark Engine</h3>
+            <p>High-performance sorting comparison pipeline evaluating QuickSort, MergeSort, and deterministic selection.</p>
+          </div>
+          <button class="btn">View Source</button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Automated Queue Delivery Bot</h3>
+            <p>Event-driven bot managing queue allocation without user registration, powered by async dispatchers.</p>
+          </div>
+          <button class="btn">View Source</button>
+        </article>
+      </div>
+    </section>
+
+    <aside class="profile-sidebar">
+      <div class="profile-card">
+        <h3>About Developer</h3>
+        <p>Software Engineering Student focused on frontend architectures, backend systems, and clean modular code.</p>
+        <h4>Tech Stack:</h4>
+        <div class="badge-list">
+          <span class="badge">HTML5 / CSS3</span>
+          <span class="badge">Flexbox & Grid</span>
+          <span class="badge">Java / OOP</span>
+          <span class="badge">Git Workflow</span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; WEB Technologies Assignment #2</p>
+  </footer>
+
+</body>
+</html>
